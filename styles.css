@@ -26,11 +26,13 @@
   background: url(images/home.jpg);
   background-size: cover;
   background-position: center;
+  /* padding-right: 10px; */
+  /* margin-left: 10px; */
   height: 768px;
-  padding-left: 10px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
 }
+
 .icons {
   font-size: 40px;
   color: white;
@@ -38,6 +40,9 @@
 .brand-logo {
   font-family: Tangerine, serif;
   font-weight: bold;
+}
+.menu-icon {
+  margin-right: 10px;
 }
 
 .section-a {
@@ -48,20 +53,26 @@ h2 {
   font-weight: bold;
   color: white;
 }
+.section-b {
+  padding-top: 1px;
+}
+
 .section-b h5 {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   color: #0aa65d;
 }
+.section-d {
+  padding-top: 1px;
+}
 
 .intro {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  height: 300px;
   padding: 20vh 10px;
-  grid-template-areas: "intro intro";
-  justify-items: center;
+}
+.intro p {
+  font-size: 5vw;
 }
 
 .intro .btn {
@@ -75,12 +86,6 @@ h2 {
 }
 .section-d h3 {
   font-size: 5vw;
-}
-.box1 {
-  grid-area: intro;
-}
-.box2 {
-  grid-area: social;
 }
 
 .section-a {
@@ -225,6 +230,7 @@ h2 {
 textarea {
   color: white;
 }
+
 .scroll-up {
   display: none;
   text-align: center;
@@ -240,16 +246,6 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) {
-  .intro {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(300px, auto);
-    padding: 20vh 20px;
-    grid-template-areas:
-      "intro intro intro social"
-      "intro intro intro social";
-    justify-content: space-around;
-  }
   .intro p {
     font-size: 2.3vw;
   }
