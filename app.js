@@ -5,7 +5,7 @@ $(document).ready(function () {
   $(".materialboxed").materialbox();
   $(".slider").slider();
   $(".parallax").parallax();
-  $("#subject,#first_name, textarea#textarea2").characterCounter();
+  $("#subject,#username, textarea#textarea2").characterCounter();
   $(".scrollspy").scrollSpy();
   $("select").formSelect();
 });
@@ -13,6 +13,7 @@ $(document).ready(function () {
 let btn = document.querySelector(".scroll-up");
 let body = document.querySelector("#body");
 let logo = document.querySelector(".brand-logo");
+let submitBtn = document.querySelector(".submit");
 let counters = document.querySelectorAll(".count");
 const speed = 400;
 btn.addEventListener("click", scrollUp);
