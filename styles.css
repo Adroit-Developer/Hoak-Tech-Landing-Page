@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+.header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0d0d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: 0;
+}
+.header {
+  position: relative;
+}
+.header > * {
+  z-index: 10;
+  position: relative;
+  color: white;
+}
+
+.header {
+  background: url(images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 768px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.icons {
+  font-size: 40px;
+  color: white;
+}
+.brand-logo {
+  font-family: Tangerine, serif;
+  font-weight: bold;
+}
+
+.section-a {
+  background-color: #026873;
+}
+.section-a h1,
+h2 {
+  font-weight: bold;
+  color: white;
+}
+.section-b h5 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0aa65d;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  padding: 20vh 10px;
+  grid-template-areas: "intro intro";
+  justify-items: center;
+}
+
+.intro .btn {
+  border: 2px solid white;
+}
+
+.box1 p {
+  font-weight: bold;
+  text-align: start;
+  font-size: 5vw;
+}
+.section-d h3 {
+  font-size: 5vw;
+}
+.box1 {
+  grid-area: intro;
+}
+.box2 {
+  grid-area: social;
+}
+
+.section-a {
+  padding-top: 1px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  justify-items: center;
+  grid-template-areas:
+    "stat1 stat1 stat1 stat1"
+    "stat2 stat2 stat2 stat2"
+    "stat3 stat3 stat3 stat3"
+    "stat4 stat4 stat4 stat4";
+}
+.stat1 {
+  grid-area: stat1;
+}
+.stat2 {
+  grid-area: stat2;
+}
+.stat3 {
+  grid-area: stat3;
+}
+.stat4 {
+  grid-area: stat4;
+}
+.count {
+  font-size: 50px;
+  font-weight: bold;
+}
+.services .material-icons {
+  display: inline-flex;
+  vertical-align: middle;
+  color: #0aa65d;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-areas:
+    "service1 service1"
+    "service2 service2"
+    "service3 service3"
+    "service4 service4"
+    "service5 service5"
+    "service6 service6";
+}
+.service1 {
+  grid-area: service1;
+}
+.service2 {
+  grid-area: service2;
+}
+.service3 {
+  grid-area: service3;
+}
+.service4 {
+  grid-area: service4;
+}
+.service5 {
+  grid-area: service5;
+}
+.service6 {
+  grid-area: service6;
+}
+.parallax-container {
+  height: 200px;
+}
+.section-d h6 {
+  text-align: center;
+  color: #0aa65d;
+}
+.work h1 {
+  font-size: 5vw;
+}
+.clients {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-template-areas:
+    "client1 client1 client1 client1 client1 client1 "
+    "client2 client2 client2 client2 client2 client2 "
+    "client3 client3 client3 client3 client3 client3 "
+    "client4 client4 client4 client4 client4 client4 ";
+}
+.client1 {
+  grid-area: client1;
+}
+.client2 {
+  grid-area: client2;
+}
+.client3 {
+  grid-area: client3;
+}
+.client4 {
+  grid-area: client4;
+}
+.client5 {
+  grid-area: client5;
+}
+.client6 {
+  grid-area: client6;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "project4 project4 "
+    "project1 project1"
+    "project3 project3"
+    "project2 project2";
+}
+.project1 {
+  grid-area: project1;
+}
+.project2 {
+  grid-area: project2;
+}
+.project3 {
+  grid-area: project3;
+}
+.project4 {
+  grid-area: project4;
+}
+.section-e h3 {
+  font-size: 5vw;
+}
+.contact-us h4 {
+  font-size: 5vw;
+}
+.input-field [type="text"] {
+  color: white;
+}
+.input-field [type="email"] {
+  color: white;
+}
+textarea {
+  color: white;
+}
+.scroll-up {
+  display: none;
+  text-align: center;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  position: fixed;
+  filter: drop-shadow(0 2px 6px black);
+}
+@media screen and (max-width: 670px) {
+  .header {
+    min-height: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    padding: 20vh 20px;
+    grid-template-areas:
+      "intro intro intro social"
+      "intro intro intro social";
+    justify-content: space-around;
+  }
+  .intro p {
+    font-size: 2.3vw;
+  }
+  .section-d h3 {
+    font-size: 2vw;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(200px, auto);
+    grid-template-areas: "stat1 stat2 stat3 stat4";
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-areas:
+      "service1 service2"
+      "service3 service4"
+      "service5 service6";
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 10px;
+    grid-template-areas:
+      "project4 project4 "
+      "project3 project1"
+      "project2 project2";
+  }
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "client1 client2 client3 client4 ";
+  }
+  .contact-us h4 {
+    font-size: 3.5vw;
+  }
+  .section-e h3 {
+    font-size: 3.5vw;
+  }
+  .work h1 {
+    font-size: 3.4vw;
+    font-weight: bold;
+  }
+}
