@@ -290,19 +290,19 @@
                   <div class="row">
                     <div class="input-field col s12  white-text">
                       <i class="material-icons prefix">account_circle</i>
-                      <input  id="username" type="text" class="validate" data-length="20" name="username">
+                      <input  id="username" type="text" class="validate" data-length="20" name="username" required>
                       <label for="username">Name</label>
                       <span class="helper-text" data-error="Please enter a valid name" ></span>
                     </div>
                     <div class="input-field col s12">
                       <i class="material-icons prefix">email</i>
-                      <input id="email" type="email" class="validate" name="email">
+                      <input id="email" type="email" class="validate" name="email" required>
                       <label for="email">Email</label>
                       <span class="helper-text" data-error="Please enter a valid email" ></span>
                     </div>
                     <div class="input-field col s12">
                       <i class="material-icons prefix">source</i>
-                      <select name="project-type">
+                      <select name="project-type" required>
                         <option value="" disabled selected>-select-</option>
                         <option value="Website">Web Development</option>
                         <option value="Mobile-app">Mobile app</option>
@@ -317,7 +317,7 @@
                 
                 <div class="input-field col s12">
                   <i class="material-icons prefix">chat</i>
-                  <textarea id="textarea2" class="materialize-textarea" data-length="100" name="message"></textarea>
+                  <textarea id="textarea2" class="materialize-textarea" data-length="100" name="message" required></textarea>
                   <label for="textarea2">Your message</label>
                 </div>
                 

@@ -17,10 +17,6 @@ let submitBtn = document.querySelector(".submit");
 let counters = document.querySelectorAll(".count");
 const speed = 400;
 let form = document.querySelector(".form");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
 btn.addEventListener("click", scrollUp);
 
 function scrollUp() {
