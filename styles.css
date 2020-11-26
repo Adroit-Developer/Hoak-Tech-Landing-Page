@@ -1,13 +1,7 @@
 * {
   box-sizing: border-box;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 5vw;
-}
+
 .header::after {
   content: "";
   display: block;
@@ -33,8 +27,6 @@ h5 {
   background: url(images/home.jpg);
   background-size: cover;
   background-position: center;
-  /* padding-right: 10px; */
-  /* margin-left: 10px; */
   height: 768px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -48,36 +40,6 @@ h5 {
   font-family: Tangerine, serif;
   font-weight: bold;
 }
-.menu-icon {
-  margin-right: 10px;
-}
-
-.section-a {
-  background-color: #026873;
-}
-.section-a h1,
-h2 {
-  font-weight: bold;
-  color: white;
-}
-.section-b {
-  padding-top: 1px;
-}
-.section-b h3 {
-  font-size: 5vw;
-  font-weight: bold;
-}
-
-.section-b h5 {
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #0aa65d;
-}
-.section-d {
-  padding-top: 1px;
-}
-
 .intro {
   height: 300px;
   padding: 20vh 10px;
@@ -85,23 +47,23 @@ h2 {
 .intro p {
   font-size: 5vw;
 }
-
 .intro .btn {
   border: 2px solid white;
 }
 
-.box1 p {
-  font-weight: bold;
-  text-align: start;
-  font-size: 5vw;
-}
-.section-d h3 {
-  font-size: 5vw;
-}
-
 .section-a {
+  background-color: #026873;
   padding-top: 1px;
 }
+
+.section-b {
+  padding-top: 1px;
+}
+
+.section-d {
+  padding-top: 1px;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -167,13 +129,7 @@ h2 {
 .parallax-container {
   height: 200px;
 }
-.section-d h6 {
-  text-align: center;
-  color: #0aa65d;
-}
-.work h1 {
-  font-size: 5vw;
-}
+
 .clients {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -226,12 +182,7 @@ h2 {
 .project4 {
   grid-area: project4;
 }
-.section-e h3 {
-  font-size: 5vw;
-}
-.contact-us h4 {
-  font-size: 5vw;
-}
+
 .input-field [type="text"] {
   color: white;
 }
@@ -241,7 +192,18 @@ h2 {
 textarea {
   color: white;
 }
-
+.social {
+  color: teal;
+}
+.social a {
+  color: teal;
+}
+.social li {
+  margin-bottom: 10px;
+}
+.social-icon {
+  font-size: 5vw;
+}
 .scroll-up {
   display: none;
   text-align: center;
@@ -251,23 +213,32 @@ textarea {
   position: fixed;
   filter: drop-shadow(0 2px 6px black);
 }
-@media screen and (max-width: 670px) {
-  .header {
-    min-height: 500px;
-  }
+.side-menu ul li a {
+  font-weight: bold;
+  color: white;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .header {
+    height: 538px;
+  }
   h1,
+  h2,
   h3,
   h4,
   h5 {
-    font-size: 2vw;
+    font-size: 5vw;
   }
+}
+@media screen and (min-width: 768px) {
   .intro p {
     font-size: 2.3vw;
   }
-  .section-d h3 {
-    font-size: 2vw;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 2.5vw;
   }
 
   .stats {
@@ -301,14 +272,7 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "client1 client2 client3 client4 ";
   }
-  .contact-us h4 {
-    font-size: 3.5vw;
-  }
-  .section-e h3 {
-    font-size: 3.5vw;
-  }
-  .work h1 {
-    font-size: 3.4vw;
-    font-weight: bold;
+  .social-icon {
+    font-size: 2vw;
   }
 }
