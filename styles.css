@@ -11,7 +11,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: 0;
 }
 .header {
@@ -203,6 +203,7 @@ textarea {
   position: fixed;
   filter: drop-shadow(0 2px 6px black);
 }
+
 .side-menu ul li a {
   font-weight: bold;
   color: white;
@@ -234,6 +235,10 @@ textarea {
       "project1 project1"
       "project3 project3"
       "project2 project2";
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
