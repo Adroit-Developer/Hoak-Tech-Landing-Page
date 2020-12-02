@@ -48,7 +48,7 @@
   font-size: 5vw;
 }
 .intro .btn {
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .section-a {
@@ -262,8 +262,8 @@ textarea {
   .services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(300px, auto);
-    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-column-gap: 10px;
     grid-template-areas:
       "service1 service2"
       "service3 service4"
@@ -275,9 +275,8 @@ textarea {
     grid-auto-rows: minmax(300px, auto);
     grid-gap: 10px;
     grid-template-areas:
-      "project4 project4 "
-      "project3 project1"
-      "project2 project2";
+      "project1 project2 "
+      "project3 project4";
   }
   .clients {
     display: grid;
