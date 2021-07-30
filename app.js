@@ -15,7 +15,7 @@ let body = document.querySelector("#body");
 let logo = document.querySelector(".brand-logo");
 let submitBtn = document.querySelector(".submit");
 let counters = document.querySelectorAll(".count");
-const speed = 400;
+const speed = 32;
 let form = document.querySelector(".form");
 btn.addEventListener("click", scrollUp);
 
@@ -45,7 +45,7 @@ counters.forEach((counter) => {
     const inc = target / speed;
     if (count < target) {
       counter.innerText = count + inc;
-      setTimeout(updateCount, 20);
+      setTimeout(updateCount, 100);
     } else {
       count.innerText = target;
     }
