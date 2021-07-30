@@ -36,6 +36,10 @@
   font-size: 40px;
   color: white;
 }
+h3,
+h5 {
+  color: #414756;
+}
 .brand-logo {
   font-family: Tangerine, serif;
   font-weight: bold;
@@ -170,8 +174,12 @@
 .project4 {
   grid-area: project4;
 }
+.test-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .slider .slides {
-  background-color: #1c5753;
+  background-color: #38acff;
 }
 .input-field [type="text"] {
   color: white;
@@ -201,7 +209,6 @@ textarea {
   right: 30px;
   z-index: 99;
   position: fixed;
-  filter: drop-shadow(0 2px 6px black);
 }
 .side-menu {
   background-color: #9ebab7;
@@ -209,6 +216,9 @@ textarea {
 .side-menu ul li a {
   font-weight: bold;
   color: #288d88;
+}
+.social .icons {
+  color: #6256c5;
 }
 
 @media screen and (max-width: 767px) {
