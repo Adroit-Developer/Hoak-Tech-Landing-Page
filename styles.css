@@ -36,6 +36,9 @@
   font-size: 40px;
   color: white;
 }
+.slider h3 {
+  color: white;
+}
 h3,
 h5 {
   color: #414756;
@@ -182,13 +185,13 @@ h5 {
   background-color: #38acff;
 }
 .input-field [type="text"] {
-  color: white;
+  color: black;
 }
 .input-field [type="email"] {
-  color: white;
+  color: black;
 }
 textarea {
-  color: white;
+  color: black;
 }
 .social {
   color: teal;
@@ -218,7 +221,7 @@ textarea {
   color: #288d88;
 }
 .social .icons {
-  color: #6256c5;
+  color: #3f51b5;
 }
 
 @media screen and (max-width: 767px) {
